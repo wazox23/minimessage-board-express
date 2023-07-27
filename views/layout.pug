@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+   h1= title
+    ul
+      each message in messages
+        li 
+          p= "Text: " + message.text
+          p= "User: " + message.user
+          p= "Date: " + message.added
+       
+    
+    block content

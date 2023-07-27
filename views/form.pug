@@ -1,0 +1,17 @@
+
+html
+head        
+    
+body 
+
+h1 New Message
+
+form(method='post' action='/new')
+  div
+    label(for='name') Name:
+    input#name(type='text' name='name')
+  div
+    label(for='message') Message:
+    input#message(type='text' name='message')
+  div
+    button(type='submit') Submit
